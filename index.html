@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
+  <script>document.createElement("picture")</script>
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <img class="nav__logo" src="images/logo.svg" alt="Base Apparel">
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <picture class="hero__image">
+        <source srcset="images/hero-desktop.jpg" media="(min-width: 992px)">
+        <img src="images/hero-mobile.jpg" alt="Hero">
+      </picture>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro">
+      <div class="container">
+        <h1 class="intro__heading">We're <span>Coming Soon</span></h1>
+        <p class="intro__text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form class="intro__form">
+          <input class="intro__input" type="text" name="email" placeholder="Email Address" aria-label="Email" autocomplete="off" />
+          <button class="intro__button">
+            <img src="images/icon-arrow.svg" alt="Arrow">
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+<script src="js/script.js"></script> 
+</body>
+</html>
